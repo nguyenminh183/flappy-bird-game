@@ -42,32 +42,32 @@ let swooshSound;
 
 function preload() {
   // Load background and base
-  this.load.image("background", "sprites/background-day.png");
-  this.load.image("ground", "sprites/base.png");
+  this.load.image("background", "./sprites/background-day.png");
+  this.load.image("ground", "./sprites/base.png");
 
   // Load bird animations
-  this.load.image("bird-up", "sprites/yellowbird-upflap.png");
-  this.load.image("bird-mid", "sprites/yellowbird-midflap.png");
-  this.load.image("bird-down", "sprites/yellowbird-downflap.png");
+  this.load.image("bird-up", "./sprites/yellowbird-upflap.png");
+  this.load.image("bird-mid", "./sprites/yellowbird-midflap.png");
+  this.load.image("bird-down", "./sprites/yellowbird-downflap.png");
 
   // Load pipes
-  this.load.image("pipe", "sprites/pipe-green.png");
+  this.load.image("pipe", "./sprites/pipe-green.png");
 
   // Load UI elements
-  this.load.image("gameover", "sprites/gameover.png");
-  this.load.image("message", "sprites/message.png"); // Get Ready message
+  this.load.image("gameover", "./sprites/gameover.png");
+  this.load.image("message", "./sprites/message.png"); // Get Ready message
 
   // Load numbers for score
   for (let i = 0; i <= 9; i++) {
-    this.load.image(`number${i}`, `sprites/${i}.png`);
+    this.load.image(`number${i}`, `./sprites/${i}.png`);
   }
 
   // Load sound effects
-  this.load.audio("flap", ["audio/wing.ogg", "audio/wing.wav"]);
-  this.load.audio("score", ["audio/point.ogg", "audio/point.wav"]);
-  this.load.audio("hit", ["audio/hit.ogg", "audio/hit.wav"]);
-  this.load.audio("die", ["audio/die.ogg", "audio/die.wav"]);
-  this.load.audio("swoosh", ["audio/swoosh.ogg", "audio/swoosh.wav"]);
+  this.load.audio("flap", ["./audio/wing.ogg", "./audio/wing.wav"]);
+  this.load.audio("score", ["./audio/point.ogg", "./audio/point.wav"]);
+  this.load.audio("hit", ["./audio/hit.ogg", "./audio/hit.wav"]);
+  this.load.audio("die", ["./audio/die.ogg", "./audio/die.wav"]);
+  this.load.audio("swoosh", ["./audio/swoosh.ogg", "./audio/swoosh.wav"]);
 }
 
 function createNumberDisplay(scene, number, x, y, scale = 1) {
